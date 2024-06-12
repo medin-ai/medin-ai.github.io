@@ -1,29 +1,155 @@
-@@include('header.htm')
+<!DOCTYPE html>
 
-@@include('blocks/navigation.htm')
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8">
+  <title>MedIn.ai：每因智能</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  <!-- theme meta -->
+  <meta name="theme-name" content="agen" />
+  
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="plugins/slick/slick.css">
+  <!-- themefy-icon -->
+  <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
+  <!-- venobox css -->
+  <link rel="stylesheet" href="plugins/venobox/venobox.css">
+  <!-- card slider -->
+  <link rel="stylesheet" href="plugins/card-slider/css/style.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+  
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  
+
+
+<header class="navigation fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html"><img src="images/MedInai-LOGO.png" alt="Egen"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- <div class="collapse navbar-collapse text-center" id="navigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">主页</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">关于</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="services.html">服务</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="team.html">团队</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">联系方式</a>
+        </li> -->
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="blog.html">Blog</a>
+        </li> -->
+        <!-- <li class="nav-item">
+          <a class="nav-link" href="portfolio.html">产品</a>
+        </li> -->
+       
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="team.html">团队</a>
+            <a class="dropdown-item" href="team-single.html">Team Details</a>
+            <a class="dropdown-item" href="career.html">Career</a>
+            <a class="dropdown-item" href="career-single.html">Career Details</a>
+            <a class="dropdown-item" href="blog-single.html">Blog Details</a>
+            <a class="dropdown-item" href="pricing.html">Pricing</a></a>
+            <a class="dropdown-item" href="faqs.html">FAQ's</a>
+          </div>
+        </li> -->
+
+      <!-- </ul>
+    </div> -->
+  </nav>
+</header>
+
 
 <!-- banner -->
-<section class="banner bg-cover position-relative d-flex justify-content-center align-items-center"
+<!-- <section class="banner bg-cover position-relative d-flex justify-content-center align-items-center"
   data-background="images/banner/banner2.jpg">
   <div class="container">
     <div class="row">
       <div class="col-12 text-center">
-        <h1 class="display-1 text-white font-weight-bold font-primary">Creative Agency</h1>
+        <h1 class="display-1 text-white font-weight-bold font-primary">让每一份健康因AI更可及</h1>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- banner -->
+
+<!-- banner -->
+<!-- <section class="banner position-relative"> -->
+<section class="banner bg-cover position-relative d-flex justify-content-center align-items-center">
+  <video autoplay muted loop id="bannerVideo" class="banner-video">
+    <source src="images/banner/banner-video2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h1 class="display-1 text-white font-weight-bold font-primary">每因智能：让每一份健康因AI更可及</h1>
       </div>
     </div>
   </div>
 </section>
 <!-- /banner -->
 
+<!-- CSS样式 -->
+<style>
+  .banner-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 确保视频填充整个区域而不变形 */
+  }
+  .banner .container {
+    z-index: 10; /* 确保内容在视频之上 */
+    position: relative;
+  }
+</style>
+
+
 <!-- service -->
 <section class="section">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 mx-auto text-center">
-        <h2 class="section-title">Our Services</h2>
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.</p>
+        <h2 class="section-title">我们的服务</h2>
+        <p class="lead">Medin.ai是以多模态医疗数据、大模型技术为核心的疾病预测平台，具备个人疾病风险量化分析与预测能力。</p>
         <div class="section-border"></div>
       </div>
     </div>
@@ -36,8 +162,8 @@
                 class="icon-lg icon-box bg-gradient-primary rounded-circle ti-palette mb-5 d-inline-block text-white"></i>
               <i class="icon-lg icon-watermark text-white ti-palette"></i>
             </div>
-            <h4 class="mb-4">Design</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo</p>
+            <h4 class="mb-4">疾病风险预测人工智能平台</h4>
+            <p>先进的大模型等人工智能技术，提供精准的疾病风险预测。</p>
           </div>
         </div>
       </div>
@@ -49,8 +175,8 @@
                 class="icon-lg icon-box bg-gradient-primary rounded-circle ti-dashboard mb-5 d-inline-block text-white"></i>
               <i class="icon-lg icon-watermark text-white ti-dashboard"></i>
             </div>
-            <h4 class="mb-4">Development</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo</p>
+            <h4 class="mb-4">AI核保师</h4>
+            <p>通过AI技术进行健康评估和风险判定，提供核保建议和理赔预测。</p>
           </div>
         </div>
       </div>
@@ -62,8 +188,8 @@
                 class="icon-lg icon-box bg-gradient-primary rounded-circle ti-announcement mb-5 d-inline-block text-white"></i>
               <i class="icon-lg icon-watermark text-white ti-announcement"></i>
             </div>
-            <h4 class="mb-4">Marketing</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo</p>
+            <h4 class="mb-4">AI健康管理师</h4>
+            <p>基于疾病风险评估，为潜在的高风险用户提供个性化的健康管理服务。</p>
           </div>
         </div>
       </div>
@@ -72,22 +198,131 @@
 </section>
 <!-- /service -->
 
-@@include('blocks/feature.htm')
+<!-- feature -->
+<section class="section bg-secondary position-relative">
+  <div class="bg-image overlay-secondary">
+    <img src="images/advantage2.jpg" alt="bg-image">
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xl-9 mx-auto">
+        <div class="row align-items-center">
+          <div class="col-lg-4 mb-4 mb-lg-0">
+            <img src="images/advantage2.jpg" alt="feature-image" class="img-fluid">
+          </div>
+          <div class="col-lg-7 offset-lg-1">
+            <div class="row">
+              <div class="col-12">
+                <h2 class="text-white">平台技术优势</h2>
+                <div class="section-border ml-0"></div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="media">
+                  <i class="icon text-gradient-primary ti-vector mr-3"></i>
+                  <div class="media-body">
+                    <h4 class="text-white">量化疾病风险模型</h4>
+                    <p class="text-light">基于Transformer和Diffusion的疾病预测学习模型，使得模型具备更强的时间序列分析与长周期疾病进展预测能力</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="media">
+                  <i class="icon text-gradient-primary ti-layout mr-3"></i>
+                  <div class="media-body">
+                    <h4 class="text-white">多模态医疗数据融合能力</h4>
+                    <p class="text-light">支持多种类型医疗数据（医学病历文本、检查检验结果、疾病诊断代码、生理信号、医学影像等）的融合学习</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="media">
+                  <i class="icon text-gradient-primary ti-headphone-alt mr-3"></i>
+                  <div class="media-body">
+                    <h4 class="text-white">检索增强技术</h4>
+                    <p class="text-light">结合检索和生成两大关键技术，使得大模型能够利用外部知识来增强其生成文本的能力，提高大模型的准确性和专业性</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="media">
+                  <i class="icon text-gradient-primary ti-ruler-pencil mr-3"></i>
+                  <div class="media-body">
+                    <h4 class="text-white">本地化高效部署及推理</h4>
+                    <p class="text-light">实现本地化低成本、安全的快速部署和推理，满足医疗本地化和数据安全要求
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /feature -->
 
-@@include('blocks/team.htm')
+<!-- team -->
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h2>我们团队</h2>
+        <p>依托于北大DSL实验室，核心团队由北大、清华的顶尖人才组成，拥有丰富科研和产业化经验。</p>
+        <div class="section-border"></div>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="col-lg-4 col-sm-6">
+        <div class="card hover-shadow">
+          <img src="images/team/guo.png" alt="team-member" class="card-img-top">
+          <div class="card-body text-center position-relative zindex-1">
+            <h4><a class="text-dark" href="team-single.html">郭先生</a></h4>
+            <i>创始人、CEO</i>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="card hover-shadow">
+          <img src="images/team/gan.png" alt="team-member" class="card-img-top">
+          <div class="card-body text-center position-relative zindex-1">
+            <h4><a class="text-dark" href="team-single.html">甘先生</a></h4>
+            <i>联合创始人、CTO</i>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="card hover-shadow">
+          <img src="images/team/yang.png" alt="team-member" class="card-img-top">
+          <div class="card-body text-center position-relative zindex-1">
+            <h4><a class="text-dark" href="team-single.html">杨教授</a></h4>
+            <i>联合创始人、首席AI算法科学家</i>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-lg-3 col-sm-6">
+        <div class="card hover-shadow">
+          <img src="images/team/member-4.jpg" alt="team-member" class="card-img-top">
+          <div class="card-body text-center">
+            <h4>Peter</h4>
+            <i>Advisor</i>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</section>
+<!-- /team -->
 
 <!-- about -->
-<section class="section-lg position-relative bg-cover" data-background="images/backgrounds/about-bg.jpg">
+<!-- <section class="section-lg position-relative bg-cover" data-background="images/backgrounds/about-bg.jpg">
   <img src="images/backgrounds/about-bg-overlay.png" alt="overlay" class="overlay-image img-fluid">
   <div class="container">
     <div class="row justify-content-between">
       <div class="col-lg-6 col-md-8 col-sm-7 col-8">
-        <h2 class="text-white mb-4">Who We Are</h2>
-        <p class="text-light mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-          incididunt
-          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.</p>
-        <a href="about.html" class="btn btn-primary">Read More</a>
+        <h2 class="text-white mb-4">我们是谁</h2>
+        <p class="text-light mb-4">每因智能依托于北大DSL实验室，核心团队由北大、清华的顶尖人才组成，拥有丰富科研和产业化经验。</p>
+        <a href="about.html" class="btn btn-primary">更多</a>
       </div>
       <div class="col-md-2 col-sm-4 col-4 text-right align-self-end">
         <a class="venobox" data-autoplay="true" data-vbtype="video"
@@ -96,11 +331,11 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- /about -->
 
 <!-- project -->
-<section class="section">
+<!-- <section class="section">
   <div class="container-fluid px-0">
     <div class="row">
       <div class="col-lg-10 mx-auto text-center">
@@ -157,17 +392,25 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- /project -->
 
 <!-- call to action -->
-<section>
-  @@include('blocks/cta.htm')
-</section>
+<!-- <section>
+  <div class="container section-sm overlay-secondary-half bg-cover" data-background="images/backgrounds/cta-bg.jpg">
+  <div class="row">
+    <div class="col-lg-8 offset-lg-1">
+      <h2 class="text-gradient-primary">Let's Start With Us!</h2>
+      <p class="h4 font-weight-bold text-white mb-4">Lorem ipsum dolor sit amet, magna habemus ius ad</p>
+      <a href="contact.html" class="btn btn-lg btn-primary">Let’s talk</a>
+    </div>
+  </div>
+</div>
+</section> -->
 <!-- /call to action -->
 
 <!-- pricing -->
-<section class="section pb-0">
+<!-- <section class="section pb-0">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 mx-auto text-center">
@@ -232,11 +475,141 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 <!-- /pricing -->
 
-@@include('blocks/blog.htm')
+<!-- blog -->
+<!-- <section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 mx-auto text-center">
+        <h2>Latest News</h2>
+        <div class="section-border"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+        <article class="card">
+          <img src="images/blog/post-1.jpg" alt="post-thumb" class="card-img-top mb-2">
+          <div class="card-body p-0">
+            <time>January 15, 2018</time>
+            <a href="blog-single" class="h4 card-title d-block my-3 text-dark hover-text-underline">How These Different
+              Book Covers Reflect the Design</a>
+            <a href="#" class="btn btn-transparent">Read more</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+        <article class="card">
+          <img src="images/blog/post-2.jpg" alt="post-thumb" class="card-img-top mb-2">
+          <div class="card-body p-0">
+            <time>January 15, 2018</time>
+            <a href="blog-single" class="h4 card-title d-block my-3 text-dark hover-text-underline">How These Different
+              Book Covers Reflect the Design</a>
+            <a href="#" class="btn btn-transparent">Read more</a>
+          </div>
+        </article>
+      </div>
+      <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+        <article class="card">
+          <img src="images/blog/post-3.jpg" alt="post-thumb" class="card-img-top mb-2">
+          <div class="card-body p-0">
+            <time>January 15, 2018</time>
+            <a href="blog-single" class="h4 card-title d-block my-3 text-dark hover-text-underline">How These Different
+              Book Covers Reflect the Design</a>
+            <a href="#" class="btn btn-transparent">Read more</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- /blog -->
 
-@@include('blocks/footer.htm')
+<!-- footer -->
+<footer class="bg-secondary position-relative">
+  <img src="images/backgrounds/map.png" class="img-fluid overlay-image" alt="">
+  <div class="section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- <div class="col-md-3 col-6">
+          <h4 class="text-white mb-5">About</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light d-block mb-3">Service</a></li>
+            <li><a href="#" class="text-light d-block mb-3">Conatact</a></li>
+            <li><a href="#" class="text-light d-block mb-3">About us</a></li>
+            <li><a href="#" class="text-light d-block mb-3">Blog</a></li>
+            <li><a href="#" class="text-light d-block mb-3">Support</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-6">
+          <h4 class="text-white mb-5">Company</h4>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-light d-block mb-3">Service</a></li>
+            <li><a href="#" class="text-light d-block mb-3">Conatact</a></li>
+            <li><a href="#" class="text-light d-block mb-3">About us</a></li>
+            <li><a href="#" class="text-light d-block mb-3">Blog</a></li>
+            <li><a href="#" class="text-light d-block mb-3">Support</a></li>
+          </ul>
+        </div> -->
+        <div class="col-md-6">
+          <div class="bg-white p-4">
+            <h3>联系我们</h3>
+            <form action="#">
+              <input type="text" id="name" name="name" class="form-control mb-4 px-0" placeholder="联系人">
+              <input type="text" id="name" name="name" class="form-control mb-4 px-0" placeholder="邮件地址">
+              <input type="tel" id="phone" name="phone" class="form-control mb-4 px-0" placeholder="手机号" required pattern="[0-9]{11}">
+              <textarea name="message" id="message" class="form-control mb-4 px-0" placeholder="留言"></textarea>
+              <button class="btn btn-primary" type="submit">提交</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pb-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-left">
+          <p class="text-light mb-0">Copyright &copy; 2024 by <a class="text-gradient-primary" href="http://medin.ai">北京每因智能数科科技有限公司</a>
+          </p>
+        </div>
+        <div class="col-md-6">
+          <ul class="list-inline text-md-right text-center">
+            <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-facebook"></i></a></li>
+            <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-twitter-alt"></i></a></li>
+            <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-instagram"></i></a></li>
+            <li class="list-inline-item"><a class="d-block p-3 text-white" href="#"><i class="ti-github"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /footer -->
 
-@@include('footer.htm')
+<!-- jQuery -->
+<script src="plugins/jQuery/jquery.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<!-- slick slider -->
+<script src="plugins/slick/slick.min.js"></script>
+<!-- venobox -->
+<script src="plugins/venobox/venobox.min.js"></script>
+<!-- shuffle -->
+<script src="plugins/shuffle/shuffle.min.js"></script>
+<!-- apear js -->
+<script src="plugins/counto/apear.js"></script>
+<!-- counter -->
+<script src="plugins/counto/counTo.js"></script>
+<!-- card slider -->
+<script src="plugins/card-slider/js/card-slider-min.js"></script>
+<!-- google map -->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU&libraries=places"></script>
+<script src="plugins/google-map/gmap.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
